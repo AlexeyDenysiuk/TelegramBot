@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TgBot.Command.Command" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAABAAQAAA=</HashCode>
+      <FileName>Command\Command.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TgBot.Command.Commands.Start" Collapsed="true">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAQAAAAAAAAABAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Command\Commands\Start.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TgBot.Command.Commands.GetBeerByRandom" Collapsed="true">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAQAAAAAAAAABAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Command\Commands\GetBeerByRandom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TgBot.Command.Commands.GetBeerByName" Collapsed="true">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAQAAAAABAIABAAEAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Command\Commands\GetBeerByName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TgBot.Command.Commands.GetBeerByIbu" Collapsed="true">
+    <Position X="3.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAgAQAAAAABAIABAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Command\Commands\GetBeerByIbu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TgBot.Command.Commands.GetBeerByEbc" Collapsed="true">
+    <Position X="2.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAIAAQAAAAABAIABAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Command\Commands\GetBeerByEbc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TgBot.Command.Commands.GetBeerByAbv" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAACAAAQAAAAABAIABAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Command\Commands\GetBeerByAbv.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TgBot.Client.BeerApiClient" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAEAAAIAAAAAQEQAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Client\BeerApiClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TgBot.Models.BeerInfo" Collapsed="true">
+    <Position X="10.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAgACAAiIAAAAQAAACAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Models\BeerInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TgBot.Config" Collapsed="true">
+    <Position X="10.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Config.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TgBot.Constants" Collapsed="true">
+    <Position X="10.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TgBot.Program" Collapsed="true">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACEAAIAAAAAAAAAAAAAAAIAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -25,7 +25,7 @@ namespace TgBot.Command.Commands
         public override async void Execute(Message message, TelegramBotClient Bot)
         {
             this.client = Bot;
-            await Bot.SendTextMessageAsync(message.Chat.Id, $"Send wanted Ebc");
+            await Bot.SendTextMessageAsync(message.Chat.Id, $"Send wanted EBC(Colour)");
             this.client.OnMessage += GetString;
 
         }
@@ -45,7 +45,7 @@ namespace TgBot.Command.Commands
         {
             if (beerInfo == null)
             {
-                await client.SendTextMessageAsync(message.From.Id, $"nema ");
+                await client.SendTextMessageAsync(message.From.Id, $"Nothing ");
             }
             string output=string.Empty;
 

@@ -6,7 +6,7 @@ namespace TgBot
 {
     class Constants
     {
-        public static string addres = "https://localhost:44368/WeatherForecast";
-        public static string apikey = "";
+        public static string addres = "https://localhost:44368/BeerFind";
+        
     }
 }

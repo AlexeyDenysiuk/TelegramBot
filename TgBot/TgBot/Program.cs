@@ -19,8 +19,7 @@ namespace TgBot
 
 
             commands = new List<Command.Command>();
-            commands.Add(new GetMyIdCommand());
-            commands.Add(new GetChatIdCommand());
+         
             commands.Add(new GetBeerByName());
             commands.Add(new GetBeerByAbv());
             commands.Add(new GetBeerByIbu());
@@ -63,65 +62,6 @@ namespace TgBot
             await Bot.AnswerCallbackQueryAsync(e.CallbackQuery.Id, $"Pressed {buttonText}");
         }
 
-        private static async void Bot_OnMessageReceived(object sender, Telegram.Bot.Args.MessageEventArgs e)
-        {
-            
-            var message = e.Message;
-
-            if(message == null||message.Type != MessageType.Text)
-            {
-                return;
-            }
-
-            string name = $"{message.From.FirstName} {message.From.LastName}";
-            Console.WriteLine($"{name} sent: {message.Text}");
-            await Bot.SendTextMessageAsync(message.Chat.Id, message.Text , replyToMessageId: message.MessageId);
-            switch (message.Text)
-            {
-                case "/start" :
-                    string text =
-  @"Teams list:
-/start = bot launching
-/inline = menu
-/keyboard = keyboard";
-                   await Bot.SendTextMessageAsync(message.From.Id, text);
-                    break;
-                case "/inline":
-                    var inlineKeyboard = new InlineKeyboardMarkup(new[]
-                    {
-                        new[]
-                        {
-                            InlineKeyboardButton.WithUrl("YT", "https://www.youtube.com/watch?v=vG84k5WOiOs&t=2593s"),
-                            InlineKeyboardButton.WithUrl("CH", "https://www.youtube.com/watch?v=vG84k5WOiOs&t=2593s")
-
-                        },
-                        new[]
-                        {
-                            InlineKeyboardButton.WithCallbackData("Punkt1"),
-                                                        InlineKeyboardButton.WithCallbackData("Punkt2")
-
-                        }
-                    });
-                    await Bot.SendTextMessageAsync(message.From.Id, "Choose menu", replyMarkup: inlineKeyboard);
-                    break;
-                case "/keyboard":
-                    var replyKeyboard = new ReplyKeyboardMarkup(new[]
-                    {
-                        new[]
-                        {
-                            new KeyboardButton("Hi"),
-                            new KeyboardButton("Wassup"),
-                        },
-                        new[]
-                        {
-                            new KeyboardButton("Contact"){RequestContact=true },
-                            new KeyboardButton("Geo"){RequestLocation=true}
-                        }
-                    });
-                    await Bot.SendTextMessageAsync(message.Chat.Id,"Message",replyMarkup: replyKeyboard );
-                    break;
-                default: break;
-            }
-        }
+        
     }
 }

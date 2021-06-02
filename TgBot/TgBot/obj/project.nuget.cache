@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EUQP0uLiMwWU6CI1RpjHID8d0hwG7M5NVYd/1Mb+qDvihf8WkufJCYKaizYJotUAjV3y1NmfspzoevdWU9Jkow==",
+  "dgSpecHash": "aHbWe0smTVMQBZcYxX1CsSAczvLYnSR4RphIYktda5gh+XXnoN01s8rnyyJ+4VTMyheYm/AQkjEhbFP8LevFZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alexey\\Desktop\\TgBot\\TgBot\\TgBot.csproj",
+  "projectFilePath": "C:\\Users\\Alexey\\Desktop\\1231\\TgBot\\TgBot\\TgBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alexey\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Alexey\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

@@ -13,13 +13,12 @@ namespace TgBot.Client
       private readonly  HttpClient _client;
         private static  string _address;
 
-        private static  string _apikey;
 
 
         public BeerApiClient()
         {
             _address = Constants.addres;
-            _apikey = Constants.apikey;
+            
             _client = new HttpClient();
             _client.BaseAddress = new Uri(_address);
         }
@@ -27,7 +26,7 @@ namespace TgBot.Client
        
         public async Task<IEnumerable<BeerInfo>> GetBeerByName(string name)
         {
-            var response = await _client.GetAsync($"WeatherForecast/beerName?Name={name}");
+            var response = await _client.GetAsync($"/BeerFind/beerName?Name={name}");
             response.EnsureSuccessStatusCode();
             var content = response.Content.ReadAsStringAsync().Result;
             var result = JsonConvert.DeserializeObject<IEnumerable<BeerInfo>>(content);
@@ -35,7 +34,7 @@ namespace TgBot.Client
         }
         public async Task<IEnumerable<BeerInfo>> GetBeerByAbv(string abv)
         {
-            var response = await _client.GetAsync($"WeatherForecast/beerAbv?Abv={abv}"); 
+            var response = await _client.GetAsync($"/BeerFind/beerAbv?Abv={abv}"); 
             response.EnsureSuccessStatusCode();
             var content = response.Content.ReadAsStringAsync().Result;
             var result = JsonConvert.DeserializeObject<IEnumerable<BeerInfo>>(content);
@@ -43,7 +42,7 @@ namespace TgBot.Client
         }
         public async Task<IEnumerable<BeerInfo>> GetBeerByIbu(string ibu)
         {
-            var response = await _client.GetAsync($"WeatherForecast/beerIbu?Ibu={ibu}");
+            var response = await _client.GetAsync($"/BeerFind/beerIbu?Ibu={ibu}");
             response.EnsureSuccessStatusCode();
             var content = response.Content.ReadAsStringAsync().Result;
             var result = JsonConvert.DeserializeObject<IEnumerable<BeerInfo>>(content);
@@ -51,7 +50,7 @@ namespace TgBot.Client
         }
         public async Task<IEnumerable<BeerInfo>> GetBeerByEbc(string ebc)
         {
-            var response = await _client.GetAsync($"WeatherForecast/beerEbc?Ebc={ebc}");
+            var response = await _client.GetAsync($"/BeerFind/beerEbc?Ebc={ebc}");
             response.EnsureSuccessStatusCode();
             var content = response.Content.ReadAsStringAsync().Result;
             var result = JsonConvert.DeserializeObject<IEnumerable<BeerInfo>>(content);
@@ -59,7 +58,7 @@ namespace TgBot.Client
         }
         public async Task<IEnumerable<BeerInfo>> GetBeerByRandom()
         {
-            var response = await _client.GetAsync($"WeatherForecast/beerRandom"); 
+            var response = await _client.GetAsync($"/BeerFind/beerRandom"); 
 
             response.EnsureSuccessStatusCode();
             var content = response.Content.ReadAsStringAsync().Result;

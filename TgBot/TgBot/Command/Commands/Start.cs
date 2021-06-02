@@ -19,9 +19,9 @@ namespace TgBot.Command.Commands
                                 $"\nHere is what I can do:" +
                                 $"\n/beerbyrnd - get random beer" +
                                 $"\n/beerbyname - find beer by it’s name"+
-                                $"\n/beerbyabv - find beer by it’s abv level " +
-                                $"\n/beerbyebc - find beer by it’s ebc level  " +
-                                $"\n/beerbyibu - find beer by it’s ibu level  "  ;
+                                $"\n/beerbyabv - find beer by it’s ABV(alc) level " +
+                                $"\n/beerbyebc - find beer by it’s EBC(colour) level  " +
+                                $"\n/beerbyibu - find beer by it’s IBU(bitterness) level  "  ;
 
             await Bot.SendTextMessageAsync(message.From.Id, startText);
         }

@@ -45,7 +45,7 @@ namespace TgBot.Command.Commands
         {
             if (beerInfo == null)
             {
-                await client.SendTextMessageAsync(message.From.Id, $"nema ");
+                await client.SendTextMessageAsync(message.From.Id, $"Nothing ");
             }
             string output=string.Empty;
 
@@ -76,27 +76,3 @@ namespace TgBot.Command.Commands
     }
 }
     
-
-//namespace TgBot.Command.Commands
-//{
-//    class JpgToPdf : Command
-//    {
-//        public override string Name { get; set; } = "/convertToPdf";
-//        private readonly ImageClient _imageClient = new ImageClient();
-//        public override TelegramBotClient client { get; set; }
-//        private string Url { get; set; }
-//        public override async void Execute(Message message, TelegramBotClient _client)
-//        {
-//            this.client = _client;
-//            await _client.SendTextMessageAsync(message.From.Id, "Send link for image");
-//            this.client.OnMessage += GetString;
-//        }
-//        private async void GetString(object sender, MessageEventArgs e)
-//        {
-//            Url = e.Message.Text;
-//            ImageClient im = new ImageClient();
-//            var result = await im.ConvertToPdf(Url);
-//            await client.SendDocumentAsync(e.Message.From.Id, new InputOnlineFile(result, "image.pdf"));
-//        }
-//    }
-//}
